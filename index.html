@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>NWDC Internal Workshop #2 Assignment</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@100&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="font-['Lato'] text-[16px] m-0 p-0 box-border">
+    <!-- Navbar -->
+    <nav class="fixed top-[0] z-[1000] w-screen h-[3rem] bg-[#ffffff] text-[#000000] flex flex-row items-center">
+      <div class="branding flex flex-row items-center ml-[4rem] h-full">
+        <div class="logo company-logo h-[1.5rem] w-[auto] cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M22 17.607c-.786 2.28-3.139 6.317-5.563 6.361-1.608.031-2.125-.953-3.963-.953-1.837 0-2.412.923-3.932.983-2.572.099-6.542-5.827-6.542-10.995 0-4.747 3.308-7.1 6.198-7.143 1.55-.028 3.014 1.045 3.959 1.045.949 0 2.727-1.29 4.596-1.101.782.033 2.979.315 4.389 2.377-3.741 2.442-3.158 7.549.858 9.426zm-5.222-17.607c-2.826.114-5.132 3.079-4.81 5.531 2.612.203 5.118-2.725 4.81-5.531z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <ul class="list-none flex items-center h-full w-full flex-row ml-[10rem] font-bold">
+        <li class="flex items-center h-full w-full mr-[3rem] font-bold"><a class="no-underline text-[#000000]"" href="#store">Store</a></li>
+        <li class="flex items-center h-full w-full mr-[3rem] font-bold"><a class="no-underline text-[#000000]"" href="#iPhone">iPhone</a></li>
+        <li class="flex items-center h-full w-full mr-[3rem] font-bold"><a class="no-underline text-[#000000]"" href="#Mac">Mac</a></li>
+        <li class="flex items-center h-full w-full mr-[3rem] font-bold"><a class="no-underline text-[#000000]"" href="#iPad">iPad</a></li>
+        <li class="flex items-center h-full w-full mr-[3rem] font-bold"><a class="no-underline text-[#000000]"" href="#Watch">Watch</a></li>
+        <li class="flex items-center h-full w-full mr-[3rem] font-bold"><a class="no-underline text-[#000000]"" href="#Accessories">Accessories</a></li>
+      </ul>
+
+      <div class="user-menu flex flex-row items-center grow justify-end h-full">
+        <div class="logo search h-[1.5rem] w-[auto] cursor-pointer w-[auto] cursor-pointer mr-[2rem]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"
+            />
+          </svg>
+        </div>
+        <div class="logo account h-[1.5rem] w-[auto] cursor-pointer mr-[2rem]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M20.822 18.096c-3.439-.794-6.64-1.49-5.09-4.418 4.72-8.912 1.251-13.678-3.732-13.678-5.082 0-8.464 4.949-3.732 13.678 1.597 2.945-1.725 3.641-5.09 4.418-3.073.71-3.188 2.236-3.178 4.904l.004 1h23.99l.004-.969c.012-2.688-.092-4.222-3.176-4.935z"
+            />
+          </svg>
+        </div>
+        <div class="logo cart h-[1.5rem] w-[auto] cursor-pointer mr-[2rem]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"
+            />
+          </svg>
+        </div>
+        <div class="expand-menu h-full py-[0] px-[4rem] flex flex-row items-center justify-center bg-white">
+          <div class="logo hamburger-menu h-[1.5rem] w-[auto] cursor-pointer mr-[2rem]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero bg-gradient-to-r from-[#000000] to-[#5c5c5c] relative w-screen h-screen flex flex-row p-[4rem]">
+      <div class="left-column relative z-[10] left-[45%] h-[100%] flex flex-col justify-center text-white">
+        <p class="mb-[2rem]" style="font-size: larger">The Real <strong>SMART PHONE</strong></p>
+        <h1 class="text-[10rem] font-bold leading-[100%] mb-[2rem]">iPhone Y</h1>
+        <p class="mb-[2rem]">Your new <strong>super power</strong>.</p>
+        <button class="w-fit h-max py-[0.5rem] px-[2.25rem] text-white border-white border-solid font-bold cursor-pointer">BUY NOW</button>
+      </div>
+
+      <div class="left-decoration absolute top-[0] left-[0] h-full w-full flex justify-start items-start overflow-hidden  ">
+        <img class="relative top-[20%] left-[5%] h-[75%] w-[auto]" src="assets/phone.png" alt="" />
+      </div>
+    </section>
+  </body>
+</html>
